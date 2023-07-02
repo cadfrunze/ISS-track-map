@@ -10,4 +10,3 @@ def coordonatele() -> dict:
         'y': round(float(data['iss_position']['latitude']), 2)
     }
 
-print(coordonatele())
