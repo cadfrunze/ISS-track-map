@@ -14,7 +14,7 @@ satelitul.shape(imaginea)
 satelitul.hideturtle()
 satelitul.penup()
 ecran.tracer(0)
-print(ecran.w)
+print(ecran.window_height())
 while True:
     coordonate: dict = coordonatele()
     x = (coordonate['x'] * ecran.window_width()) / 360 / 2
