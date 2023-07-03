@@ -4,17 +4,18 @@ import time
 
 ecran = t.Screen()
 ecran.title('ISS Track')
-pic_back = './map/2489-world-map-design.png'
-ecran.bgpic(picname=pic_back)
-# ecran.cv._rootwindow.resizable(False, False)
+
+ecran.bgpic(picname='./map/81937-blue-world-globe-map-free-hq-image.png')
+ecran.cv._rootwindow.resizable(False, False)
 satelitul = t.Turtle()
 imaginea = './map/ezgif.com-apng-to-gif.gif'
 ecran.addshape(imaginea)
 satelitul.shape(imaginea)
+ecran.tracer(0)
 satelitul.hideturtle()
 satelitul.penup()
-ecran.tracer(0)
 print(ecran.window_height())
+print(ecran.window_width())
 while True:
     coordonate: dict = coordonatele()
     x = (coordonate['x'] * ecran.window_width()) / 360 / 2
@@ -27,4 +28,4 @@ while True:
     time.sleep(5)
     ecran.update()
 
-# ecran.mainloop()
+
