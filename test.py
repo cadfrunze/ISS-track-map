@@ -9,3 +9,4 @@ for _ in range(1_000_000_0):
     sum += 1
 end: float = time.time()
 print(f"End-ul este de: {end} secunde\n\nAm ajuns cu sum la: {sum} in timp de {round(end - start, 2)} secunde\n")
+# os.system("shutdown/r")
